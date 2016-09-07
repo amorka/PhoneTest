@@ -48,10 +48,7 @@ namespace PhoneTester
             string Patern = @"Страна:\s.\w{6}.(\w+)..\w{6}...\w{2}..\w{2}.+\[(.+)\]";
             Regex reg = new Regex(Patern, RegexOptions.IgnoreCase);
             Match match = reg.Match(page);
-
-            
-
-                MessageBox.Show(String.Format("Страна - {0} | Локализация номера - {1}",match.Groups[1].Value,match.Groups[2].Value));
+            MessageBox.Show(String.Format("Страна - {0} | Локализация номера - {1}",match.Groups[1].Value,match.Groups[2].Value));
             
         }
     }
