@@ -59,5 +59,14 @@ namespace PhoneTester
 
             vb.Show();
         }
+
+        private void импортИзФайлаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = ".txt |*.txt";
+            if (ofd.ShowDialog() == DialogResult.OK) {
+                Worker.Instance.StartReadFile(ofd.FileName);
+            }
+        }
     }
 }

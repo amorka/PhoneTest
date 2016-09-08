@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.базаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.просмотреВсехЗаписейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.импортИзФайлаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +79,8 @@
             // базаToolStripMenuItem
             // 
             this.базаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.просмотреВсехЗаписейToolStripMenuItem});
+            this.просмотреВсехЗаписейToolStripMenuItem,
+            this.импортИзФайлаToolStripMenuItem});
             this.базаToolStripMenuItem.Name = "базаToolStripMenuItem";
             this.базаToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.базаToolStripMenuItem.Text = "База";
@@ -89,6 +91,13 @@
             this.просмотреВсехЗаписейToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.просмотреВсехЗаписейToolStripMenuItem.Text = "Просмотре всех записей";
             this.просмотреВсехЗаписейToolStripMenuItem.Click += new System.EventHandler(this.просмотреВсехЗаписейToolStripMenuItem_Click);
+            // 
+            // импортИзФайлаToolStripMenuItem
+            // 
+            this.импортИзФайлаToolStripMenuItem.Name = "импортИзФайлаToolStripMenuItem";
+            this.импортИзФайлаToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.импортИзФайлаToolStripMenuItem.Text = "Импорт из файла";
+            this.импортИзФайлаToolStripMenuItem.Click += new System.EventHandler(this.импортИзФайлаToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -117,6 +126,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem базаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem просмотреВсехЗаписейToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem импортИзФайлаToolStripMenuItem;
     }
 }
 
