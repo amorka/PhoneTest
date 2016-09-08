@@ -32,6 +32,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.окноВизуализацииЗапросовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.базаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.просмотреВсехЗаписейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +50,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.окноВизуализацииЗапросовToolStripMenuItem});
+            this.окноВизуализацииЗапросовToolStripMenuItem,
+            this.базаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(674, 24);
@@ -71,6 +74,21 @@
             this.button1.Text = "Загрузить главную страницу";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // базаToolStripMenuItem
+            // 
+            this.базаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.просмотреВсехЗаписейToolStripMenuItem});
+            this.базаToolStripMenuItem.Name = "базаToolStripMenuItem";
+            this.базаToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.базаToolStripMenuItem.Text = "База";
+            // 
+            // просмотреВсехЗаписейToolStripMenuItem
+            // 
+            this.просмотреВсехЗаписейToolStripMenuItem.Name = "просмотреВсехЗаписейToolStripMenuItem";
+            this.просмотреВсехЗаписейToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.просмотреВсехЗаписейToolStripMenuItem.Text = "Просмотре всех записей";
+            this.просмотреВсехЗаписейToolStripMenuItem.Click += new System.EventHandler(this.просмотреВсехЗаписейToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -97,6 +115,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem окноВизуализацииЗапросовToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem базаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem просмотреВсехЗаписейToolStripMenuItem;
     }
 }
 

@@ -52,5 +52,12 @@ namespace PhoneTester
             MessageBox.Show(String.Format("Страна - {0} | Локализация номера - {1}",match.Groups[1].Value,match.Groups[2].Value));
             
         }
+
+        private void просмотреВсехЗаписейToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewBase vb = new ViewBase();
+
+            vb.Show();
+        }
     }
 }
