@@ -59,6 +59,13 @@ namespace PhoneTester
             CloseConnection();
         }
 
+        public void AddPhoneWork(PhoneInfo pi)
+        {
+            SQLiteCommand com = connect.CreateCommand();
+            com.CommandText = "INSERT INTO phones (phone, country) VALUES ('" + pi.phone + "','" + pi.country + "');";
+            com.ExecuteNonQuery();
+        }
+
         public List<PhoneInfo> GetAllPhones() {
             List<PhoneInfo> lpi = new List<PhoneInfo>();
             CreateConnection();
@@ -147,6 +154,37 @@ namespace PhoneTester
             }
                 CloseConnection();
             return pi;
+        }
+        public PhoneInfo GetPhoneWork(string phone)
+        {
+            PhoneInfo pi = null;
+            SQLiteCommand com = connect.CreateCommand();
+            com.CommandText = "SELECT * FROM phones WHERE phone LIKE '" + phone + "';";
+            SQLiteDataReader dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                pi = new PhoneInfo()
+                {
+                    phone = dr["phone"].ToString(),
+                    country = dr["country"].ToString()
+                };
+            }
+            return pi;
+        }
+
+        public void StartWork() {
+            CreateConnection();
+            SQLiteCommand com = connect.CreateCommand();
+            com.CommandText = "BEGIN;";
+            com.ExecuteNonQuery();
+        }
+
+        public void EndWork()
+        {
+            SQLiteCommand com = connect.CreateCommand();
+            com.CommandText = "COMMIT;";
+            com.ExecuteNonQuery();
+            connect.Dispose();
         }
     }
 }
