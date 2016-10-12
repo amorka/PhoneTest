@@ -131,5 +131,22 @@ namespace PhoneTester
             com.ExecuteNonQuery();
             CloseConnection();
         }
+        public PhoneInfo GetPhone(string phone) {
+            PhoneInfo pi = null;
+            CreateConnection();
+            SQLiteCommand com = connect.CreateCommand();
+            com.CommandText = "SELECT * FROM phones WHERE phone LIKE '"+phone+"';";
+            SQLiteDataReader dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                pi = new PhoneInfo()
+                {
+                    phone = dr["phone"].ToString(),
+                    country = dr["country"].ToString()
+                };
+            }
+                CloseConnection();
+            return pi;
+        }
     }
 }
