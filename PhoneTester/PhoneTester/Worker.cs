@@ -41,7 +41,7 @@ namespace PhoneTester
                     {
                         if (DBAdapter.Instance.GetPhone(phone) == null)
                         {
-                            string page = Requester.Instance.LoadStartPage("http://www.kody.su/check-tel?number=" + phone + "#text");
+                            string page = Requester.Instance.LoadStartPage("http://www.kody.su/check-tel#text",phone);
                             //string Patern = @"Страна:\s.\w{6}.(\w+)..\w{6}...\w{2}..\w{2}.+\[(.+)\]";
                             string Patern = @"Страна:\s<strong>([а-яА-Я]+)<\/strong>";
                             Regex reg = new Regex(Patern, RegexOptions.IgnoreCase);
