@@ -38,7 +38,7 @@ namespace PhoneTester
                 //wreq.AddHeader(HttpHeader.Referer.ToString(), "http://www.kody.su/check-tel");
                 //wreq.AddHeader(HttpHeader.ContentLanguage.ToString(), "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
                 //reqParam["number"]= number;
-                //page = wreq.Post(url, reqParam).ToString();
+                //page = wreq.Post(url, reqParam).ToString(); ч
 
                 var reqParam = new RequestParams();
                 wreq.UserAgent = Http.ChromeUserAgent();
