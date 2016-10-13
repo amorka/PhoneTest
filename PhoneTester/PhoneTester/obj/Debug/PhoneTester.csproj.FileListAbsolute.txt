@@ -9,7 +9,6 @@ D:\GIT\PhoneTester\PhoneTester\PhoneTester\bin\Debug\System.Data.SQLite.Linq.dll
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\bin\Debug\EntityFramework.xml
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\bin\Debug\EntityFramework.SqlServer.xml
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\bin\Debug\System.Data.SQLite.xml
-D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.csprojResolveAssemblyReference.cache
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.Form1.resources
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.Properties.Resources.resources
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.ViewBase.resources
@@ -17,3 +16,9 @@ D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.ViewRequest.res
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.csproj.GenerateResource.Cache
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.exe
 D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.pdb
+D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.status.resources
+D:\GIT\PhoneTester\PhoneTester\PhoneTester\bin\Debug\xNet.dll
+D:\GIT\PhoneTester\PhoneTester\PhoneTester\obj\Debug\PhoneTester.csprojResolveAssemblyReference.cache
+D:\GIT\PhoneTester\PhoneTester\PhoneTester\bin\Debug\Json.NET.Web.dll
+D:\GIT\PhoneTester\PhoneTester\PhoneTester\bin\Debug\Newtonsoft.Json.dll
+D:\GIT\PhoneTester\PhoneTester\PhoneTester\bin\Debug\Newtonsoft.Json.xml

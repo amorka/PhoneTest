@@ -43,8 +43,8 @@ namespace PhoneTester
         private void button1_Click(object sender, EventArgs e)
         {
             string tel = "79234176493";
-            string page = Requester.Instance.LoadStartPage("http://www.kody.su/check-tel?number="+tel+"#text");
-           // vr.ShowPage(page);
+            string page = Requester.Instance.LoadStartPage("http://www.kody.su/check-tel#text", tel);
+            // vr.ShowPage(page);
             //Страна: <strong>Россия</strong></td><td>Код сотового оператора: <br><strong>Мегафон [Томская область]
             string Patern = @"Страна:\s.\w{6}.(\w+)..\w{6}...\w{2}..\w{2}.+\[(.+)\]";
             Regex reg = new Regex(Patern, RegexOptions.IgnoreCase);
